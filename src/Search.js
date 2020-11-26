@@ -15,7 +15,7 @@ const Search = ({ hideButtons = false }) => {
   };
 
   return (
-    <div className="search">
+    <form className="search">
       <div className="search__input">
         <SearchIcon className="search__inputIcon" />
         <input value={input} onChange={(e) => setInput(e.target.value)} />
@@ -44,7 +44,7 @@ const Search = ({ hideButtons = false }) => {
           </Button>
         </div>
       )}
-    </div>
+    </form>
   );
 };
 
